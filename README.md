@@ -71,28 +71,6 @@ _**SKU v2** is an update to the SKU app. This new version allows the user to log
 
 ![Dummy Link](url)
 
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
-
 #### Component Tree
 
 
