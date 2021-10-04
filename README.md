@@ -107,7 +107,7 @@ src
 
 #### ERD Model
 
-![ERD](https://app.diagrams.net/#G1downV5oXggUAY1dMdPZGB564TUKyOWl4)
+[ERD](https://app.diagrams.net/#G1downV5oXggUAY1dMdPZGB564TUKyOWl4)
 
 
 <br>
