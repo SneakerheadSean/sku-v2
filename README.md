@@ -1,4 +1,4 @@
-# The Collection README 
+# SKU v2 README 
 
 - [Overview](#overview)
 - [MVP](#mvp)
@@ -19,39 +19,50 @@
 
 ## Overview
 
-_**The Collection** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**SKU v2** is an update to the SKU app. This new version allows the user to login and see their collection is greater detail and clarity. Along with having a dedicated showcase page under your account, you can know search for your favorite sneaker and read historical facts that pertains to that model.
 
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+**SKU v2** 
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+|               MVP                 | Description                                    
+| :-----------------------------:   | :-----------------------------------------     
+|       CRUD Functionality          | App will have full CRUD Functionality for users as well as for sneaker inventory/collection     
+|  Authentication and Authorization | App will allow users to register for an account and will require login credentials to view and make changes to their account      
+|              AXIOS                | Multiple Axios requests will be handled properly and display accurate responses.     
+|     Consume and render data       | Consume data from my Ruby on Rails API, and render that data in my React components. 
+
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+### Server (Back End) ---------
+- Build a Ruby on Rails server, exposing RESTful JSON endpoints.
+- Utilize Rails to define models for interacting with the database.
+- Implement working controller actions for Full CRUD (index, show, create, update, delete)
+
+### Client (Front End)
+- Beautiful and Responsive website
+- Understandable and organized React file structure
+- Utilize state and props in my components efficiently.
+- Utilize React Router, for client-side routing.
 
 <br>
 
 ### Libraries and Dependencies
 
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Library      | Description                                
+| :--------------: | :----------------------------------------- 
+|      React       | A JavaScript library for building user interfaces
+|   React Router   | React Router is a collection of navigational components that compose declaratively with your application.|
+|   Ruby on Rails  | Ruby - A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
+                   | Rails is a web application development framework written in the Ruby programming language.
+
 
 <br>
 
