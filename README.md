@@ -69,7 +69,7 @@ _**SKU v2** is an update to the SKU app. This new version allows the user to log
 
 #### Wireframes
 
-![Dummy Link](url)
+[WireFrame](https://www.figma.com/file/nkLvt5Wyd2djrRvFw1x2Dl/SKU-v2?node-id=16%3A59)
 
 #### Component Tree
 
