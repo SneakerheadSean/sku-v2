@@ -59,7 +59,8 @@ _**SKU v2** is an update to the SKU app. This new version allows the user to log
 |     Library      | Description                                
 | :--------------: | :----------------------------------------- 
 |      React       | A JavaScript library for building user interfaces
-|   React Router   | React Router is a collection of navigational components that compose declaratively with your application.|
+|   React Router   | React Router is a collection of navigational components that compose declaratively with your application.
+|      Axios       | Axios will be used to access data and render data to the browser through React components.
 |   Ruby on Rails  | Ruby - A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Rails is a web application development framework written in the Ruby programming language.
 
 
