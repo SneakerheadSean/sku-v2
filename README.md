@@ -93,11 +93,14 @@ src
 #### Time Estimates
 
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Task                    | Priority | Estimated Time | Time Invested | Actual Time |
+| ----------------------- | :------: | :------------: | :-----------: | :---------: |
+| Design and Consulting   |    L     |     5 hrs      |     10 hrs     |    14 hrs    |
+| Web Application Setup   |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Back End CRUD Actions   |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Front End CRUD Actions  |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Authentication and Authorization    |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| TOTAL                   |          |     6 hrs      |     3 hrs     |     TBD     |
 
 
 
