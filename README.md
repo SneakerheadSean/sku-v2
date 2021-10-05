@@ -59,7 +59,8 @@ _**SKU v2** is an update to the SKU app. This new version allows the user to log
 |     Library      | Description                                
 | :--------------: | :----------------------------------------- 
 |      React       | A JavaScript library for building user interfaces
-|   React Router   | React Router is a collection of navigational components that compose declaratively with your application.|
+|   React Router   | React Router is a collection of navigational components that compose declaratively with your application.
+|      Axios       | Axios will be used to access data and render data to the browser through React components.
 |   Ruby on Rails  | Ruby - A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Rails is a web application development framework written in the Ruby programming language.
 
 
@@ -69,7 +70,7 @@ _**SKU v2** is an update to the SKU app. This new version allows the user to log
 
 #### Wireframes
 
-[WireFrame](https://www.figma.com/file/nkLvt5Wyd2djrRvFw1x2Dl/SKU-v2?node-id=16%3A59)
+[WireFrame](https://www.figma.com/file/nkLvt5Wyd2djrRvFw1x2Dl/SKU-v2?node-id=0%3A1)
 
 #### Component Tree
 
@@ -115,7 +116,7 @@ screens/
 
 #### ERD Model
 
-[ERD](https://app.diagrams.net/#G1downV5oXggUAY1dMdPZGB564TUKyOWl4)
+[ERD](https://drive.google.com/file/d/1downV5oXggUAY1dMdPZGB564TUKyOWl4/view?usp=sharing)
 
 
 <br>
