@@ -101,10 +101,10 @@ screens/
 | Task                    | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :-----------: | :---------: |
 | Design and Consulting   |    L     |     5 hrs      |     10 hrs     |    14 hrs    |
-| Web Application Setup   |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Back End CRUD Actions   |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Front End CRUD Actions  |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Authentication and Authorization    |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Web Application Setup   |    H     |     5 hrs      |     6 hrs     |     TBD     |
+| Back End CRUD Actions   |    H     |     6 hrs      |     7 hrs     |     TBD     |
+| Front End CRUD Actions  |    H     |     7 hrs      |     9 hrs     |     TBD     |
+| Authentication and Authorization    |    H     |     8 hrs      |     8 hrs     |     TBD     |
 | TOTAL                   |          |     6 hrs      |     3 hrs     |     TBD     |
 
 
