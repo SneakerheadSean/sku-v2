@@ -74,6 +74,7 @@ _**SKU v2** is an update to the SKU app. This new version allows the user to log
 
 #### Component Tree
 
+[Component Tree](https://whimsical.com/sku-v2-Kt1rv8wePmQtpX5PTvZ3rE)
 
 #### Component Architecture
 
