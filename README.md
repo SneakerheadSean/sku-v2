@@ -69,7 +69,7 @@ _**SKU v2** is an update to the SKU app. This new version allows the user to log
 
 #### Wireframes
 
-[WireFrame](https://www.figma.com/file/nkLvt5Wyd2djrRvFw1x2Dl/SKU-v2?node-id=16%3A59)
+[WireFrame](https://www.figma.com/file/nkLvt5Wyd2djrRvFw1x2Dl/SKU-v2?node-id=0%3A1)
 
 #### Component Tree
 
@@ -115,7 +115,7 @@ screens/
 
 #### ERD Model
 
-[ERD](https://app.diagrams.net/#G1downV5oXggUAY1dMdPZGB564TUKyOWl4)
+[ERD](https://drive.google.com/file/d/1downV5oXggUAY1dMdPZGB564TUKyOWl4/view?usp=sharing)
 
 
 <br>
