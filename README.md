@@ -77,17 +77,22 @@ _**SKU v2** is an update to the SKU app. This new version allows the user to log
 #### Component Architecture
 
 ``` structure
-
+x
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ Nav.jsx
+      |__ Layout.jsx
+      |__ Footer.jsx
+      |__ ProductCard.jsx
+      |__ ProductEdit.jsx
 |__ services/
-
+      |__ config.js
+screens/
+      LandingPage
+      HomePage
+      HistoryPage
+      CommentsPage
 ```
 
 #### Time Estimates
