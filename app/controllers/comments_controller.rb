@@ -1,5 +1,7 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :only_user_crud, only: [:create, :update, :destroy]
 
   # GET /comments
   def index
@@ -61,4 +63,9 @@ class CommentsController < ApplicationController
     def comment_params
       params.require(:comment).permit(:sneaker_id, :user_id, :description)
     end
+
+    def only_user_crud
+      @correct_user = @current_user.id == support_params[:user_id] 
+    end
+
 end
