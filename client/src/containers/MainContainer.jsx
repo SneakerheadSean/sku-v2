@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 
 import { getAllSneakers, addSneaker, deleteSneaker, updateSneaker } from '../services/sneakers'
-import { getAllComments } from '../services/comments';
+// import { getAllComments } from '../services/comments';
 import Comments from '../screens/Comments';
 import Sneakers from '../screens/Sneakers';
 import SneakerCreate from '../screens/SneakerCreate';
@@ -24,13 +24,13 @@ export default function MainContainer() {
     fetchSneakers();
   }, []);
 
-  useEffect(() => {
-    const fetchComments = async () => {
-      const commentList = await getAllComments();
-      setComments(commentList);
-    };
-    fetchComments();
-  }, []);
+  // useEffect(() => {
+  //   const fetchComments = async () => {
+  //     const commentList = await getAllComments();
+  //     setComments(commentList);
+  //   };
+  //   fetchComments();
+  // }, []);
 
   const handleSneakerCreate = async (sneakerData) => {
     const newSneaker = await addSneaker(sneakerData);
@@ -56,20 +56,20 @@ export default function MainContainer() {
 
   return (
     <Switch>
-       <Route path='/flavors'>
+       <Route path='/comments'>
         <Comments comments={comments} />
       </Route>
-      <Route path='/foods/:id/edit'>
-        <FoodEdit foods={foods} handleFoodUpdate={handleFoodUpdate} />
+      <Route path='/sneakers/:id/edit'>
+        <SneakerEdit sneakers={sneakers} handleSneakerUpdate={handleSneakerUpdate} />
       </Route>
       <Route path='/foods/:id'>
-        <FoodDetail flavors={flavors} />
+        <SneakerDetail comments={comments} />
       </Route>
-      <Route path='/foods/new'>
-        <FoodCreate handleFoodCreate={handleFoodCreate} />
-      </Route> */
-      /* <Route path='/sneakers'>
-        <Sneakers sneakers={sneakers}  />
+      <Route path='/sneakers/new'>
+        <SneakerCreate handleSneakerCreate={handleSneakerCreate} />
+      </Route> 
+       <Route path='/sneakers'>
+        <Sneakers sneakers={sneakers} handleSneakerDelete={handleSneakerDelete}  />
       </Route>
     </Switch>
   ); 
