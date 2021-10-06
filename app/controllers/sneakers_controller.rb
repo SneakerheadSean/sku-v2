@@ -1,5 +1,6 @@
 class SneakersController < ApplicationController
   before_action :set_sneaker, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /sneakers
   def index
@@ -10,15 +11,16 @@ class SneakersController < ApplicationController
 
   # GET /sneakers/1
   def show
-    render json: @sneaker
+    render json: @sneaker, include: :comments
   end
 
   # POST /sneakers
   def create
     @sneaker = Sneaker.new(sneaker_params)
+    @sneaker.user = @current_user
 
     if @sneaker.save
-      render json: @sneaker, status: :created, location: @sneaker
+      render json: @sneaker, status: :created
     else
       render json: @sneaker.errors, status: :unprocessable_entity
     end
