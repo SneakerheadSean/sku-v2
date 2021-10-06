@@ -15,6 +15,11 @@ class CommentsController < ApplicationController
 
   # POST /comments
   def create
+    if !@correct_user
+      render json: "Unauthorized", status: :unauthorized
+      return
+    end
+    @sneaker = Sneaker.find(params[:sneaker_id])
     @comment = Comment.new(comment_params)
 
     if @comment.save
@@ -26,6 +31,10 @@ class CommentsController < ApplicationController
 
   # PATCH/PUT /comments/1
   def update
+    if !@correct_user
+      render json: "Unauthorized", status: :unauthorized
+      return
+    end
     if @comment.update(comment_params)
       render json: @comment
     else
@@ -35,6 +44,10 @@ class CommentsController < ApplicationController
 
   # DELETE /comments/1
   def destroy
+    if !@correct_user
+      render json: "Unauthorized", status: :unauthorized
+      return
+    end
     @comment.destroy
   end
 
@@ -46,6 +59,6 @@ class CommentsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def comment_params
-      params.require(:comment).permit(:sneaker_id_id, :user_id_id, :description)
+      params.require(:comment).permit(:sneaker_id, :user_id, :description)
     end
 end

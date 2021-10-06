@@ -19,7 +19,7 @@
 
 ## Overview
 
-_**SKU v2** is an update to the SKU app. This new version allows the user to login and see their collection is greater detail and clarity. Along with having a dedicated showcase page under your account, you can know search for your favorite sneaker and read historical facts that pertains to that model.
+**SKU v2** is an update to the SKU app. This new version allows the user to login and see their collection is greater detail and clarity. Along with having a dedicated showcase page under your account, you can know search for your favorite sneaker and read historical facts that pertains to that model.
 
 
 <br>
