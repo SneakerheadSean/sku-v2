@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
-  has_and_belongs_to_many :sneaker
-  has_and_belongs_to_many :user
+  belongs_to :sneaker
+  belongs_to :user
 end

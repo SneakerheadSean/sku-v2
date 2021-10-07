@@ -19,6 +19,13 @@ User.destroy_all
     username: "hughes1",
     password: "123456"
 )
+@user1 = User.create!(
+  first_name: "Kyrie",
+  last_name: "Hughes",
+  email: "Kyrie@nike.com",
+  username: "kyrie1",
+  password: "123456"
+)
 
 @sneaker = Sneaker.create!(
   user: @user,
@@ -30,6 +37,11 @@ User.destroy_all
   image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
 )
 
+@comment = Comment.create!(
+  user: @user1,
+  sneaker: @sneaker,
+  description: "testing 123"
+)
 
 
 
