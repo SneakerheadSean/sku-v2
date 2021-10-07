@@ -4,6 +4,9 @@ export default function Sneakers(props) {
   return (
     <div>
       <h3>Sneakers</h3>
+      <Link to='/sneakers/'>
+        <button>Add to Collection!</button>
+      </Link>
       {props.sneakers.map((sneaker) => (
         <div key={sneaker.id}>
           <Link to={`/sneaker/${sneaker.id}`}>
@@ -18,9 +21,6 @@ export default function Sneakers(props) {
           </button>
         </div>
       ))}
-      <Link to='/sneakers/new'>
-        <button>Add to Collection!</button>
-      </Link>
     </div>
   );
 }

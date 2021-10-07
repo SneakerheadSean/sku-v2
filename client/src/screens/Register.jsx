@@ -24,11 +24,21 @@ export default function Register(props) {
     >
       <h3>Register</h3>
       <label>
-        Username:
+       First Name: 
         <input
           type='text'
-          name='username'
-          value={formData.username}
+          name='firstname'
+          value={formData.first_name}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>
+       Last Name: 
+        <input
+          type='text'
+          name='lastname'
+          value={formData.last_name}
           onChange={handleChange}
         />
       </label>
@@ -39,6 +49,16 @@ export default function Register(props) {
           type='text'
           name='email'
           value={formData.email}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>
+       UserName: 
+        <input
+          type='text'
+          name='username'
+          value={formData.username}
           onChange={handleChange}
         />
       </label>
