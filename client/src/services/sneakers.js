@@ -21,7 +21,7 @@ export const deleteSneaker = async (id) => {
 };
 
 export const updateSneaker = async (id, sneakerData) => {
-  const res = await api.put(`/foods/${id}`, { sneaker: sneakerData });
+  const res = await api.put(`/sneakers/${id}`, { sneaker: sneakerData });
   return res.data;
 };
 

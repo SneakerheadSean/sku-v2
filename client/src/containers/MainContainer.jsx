@@ -62,7 +62,7 @@ export default function MainContainer() {
       <Route path='/sneakers/:id/edit'>
         <SneakerEdit sneakers={sneakers} handleSneakerUpdate={handleSneakerUpdate} />
       </Route>
-      <Route path='/foods/:id'>
+      <Route path='/sneakers/:id'>
         <SneakerDetail comments={comments} />
       </Route>
       <Route path='/sneakers/new'>
