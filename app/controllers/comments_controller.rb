@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
   # GET /sneakers/:sneaker_id/comments
   def index
     @sneaker = Sneaker.find(params[:sneaker_id])
-    @comments = @sneaker[:comments]
+    @comments = @sneaker.comments
 
     render json: @comments
   end
@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
     render json: @comment
   end
 
-  # POST /comments
+  # POST /sneakers/:sneaker_id/comments
   def create
     @sneaker = Sneaker.find(params[:sneaker_id])
     @comment = Comment.new(comment_params)
@@ -32,10 +32,10 @@ class CommentsController < ApplicationController
 
   # PATCH/PUT /comments/1
   def update
-    if !@correct_user
-      render json: "Unauthorized", status: :unauthorized
-      return
-    end
+    # if !@correct_user
+    #   render json: "Unauthorized", status: :unauthorized
+    #   return
+    # end
     if @comment.update(comment_params)
       render json: @comment
     else
@@ -45,10 +45,10 @@ class CommentsController < ApplicationController
 
   # DELETE /comments/1
   def destroy
-    if !@correct_user
-      render json: "Unauthorized", status: :unauthorized
-      return
-    end
+    # if !@correct_user
+    #   render json: "Unauthorized", status: :unauthorized
+    #   return
+    # end
     @comment.destroy
   end
 
