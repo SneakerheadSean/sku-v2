@@ -35,7 +35,7 @@ export default function SneakerDetail(props) {
       <h1>Test</h1>
       <h3>{sneakerItem?.name}</h3>
       {sneakerItem?.comments.map((comment) => (
-        <p key={comment.id}>{comment.description}</p>
+        <p key={comments.id}>{comments.description}</p>
       ))}
       
      <form onSubmit={handleSubmit}>
