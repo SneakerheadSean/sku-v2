@@ -7,7 +7,7 @@ export default function SneakerDetail(props) {
   const [sneakerItem, setSneakerItem] = useState(null);
   const [selectedComment, setSelectedComment] = useState('');
   const { id } = useParams();
-  const { comments } = props;
+  // const { comments } = props;
 
   useEffect(() => {
     const fetchSneakerItem = async () => {
@@ -35,7 +35,7 @@ export default function SneakerDetail(props) {
       <h1>Test</h1>
       <h3>{sneakerItem?.name}</h3>
       {sneakerItem?.comments.map((comment) => (
-        <p key={comments.id}>{comments.description}</p>
+        <p key={comment.id}>{comment.description}</p>
       ))}
       
      <form onSubmit={handleSubmit}>
