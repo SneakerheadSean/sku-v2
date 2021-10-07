@@ -7,9 +7,10 @@ export default function SneakerDetail(props) {
   const [sneakerItem, setSneakerItem] = useState(null);
   const [selectedComment, setSelectedComment] = useState('');
   const { id } = useParams();
+
   // const { comments } = props;
 
-  useEffect(() => {
+    useEffect(() => {
     const fetchSneakerItem = async () => {
       const sneakerData = await getOneSneaker(id);
       setSneakerItem(sneakerData);
