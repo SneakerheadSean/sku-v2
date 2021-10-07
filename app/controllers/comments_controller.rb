@@ -1,11 +1,12 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :update, :destroy]
   before_action :authorize_request, only: [:create, :update, :destroy]
-  before_action :only_user_crud, only: [:create, :update, :destroy]
+  # before_action :only_user_crud, only: [:create, :update, :destroy]
 
-  # GET /comments
+  # GET /sneakers/:sneaker_id/comments
   def index
-    @comments = Comment.all
+    @sneaker = Sneaker.find(params[:sneaker_id])
+    @comments = @sneaker[:comments]
 
     render json: @comments
   end
@@ -17,15 +18,13 @@ class CommentsController < ApplicationController
 
   # POST /comments
   def create
-    if !@correct_user
-      render json: "Unauthorized", status: :unauthorized
-      return
-    end
     @sneaker = Sneaker.find(params[:sneaker_id])
     @comment = Comment.new(comment_params)
+    @comment.user = @current_user
+    @comment.sneaker = @sneaker
 
     if @comment.save
-      render json: @comment, status: :created, location: @comment
+      render json: @comment, status: :created
     else
       render json: @comment.errors, status: :unprocessable_entity
     end
@@ -64,8 +63,8 @@ class CommentsController < ApplicationController
       params.require(:comment).permit(:sneaker_id, :user_id, :description)
     end
 
-    def only_user_crud
-      @correct_user = @current_user.id == support_params[:user_id] 
-    end
+    # def only_user_crud
+    #   @correct_user = @current_user.id == support_params[:user_id] 
+    # end
 
 end
