@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import { useState } from 'react'
+import { Route } from 'react-router-dom';
 
 export default function SneakerCreate(props) {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ export default function SneakerCreate(props) {
     };
 
   return (
+    <Route path="/sneakers" >
+      
     <form onSubmit={(e)=> {
       e.preventDefault()
       props.handleSneakerCreate(formData);
@@ -26,7 +29,7 @@ export default function SneakerCreate(props) {
           name='name'
           value={formData.name}
           onChange={handleChange}
-        />
+          />
         
       </label>
 
@@ -39,7 +42,7 @@ export default function SneakerCreate(props) {
           name='brand'
           value={formData.brand}
           onChange={handleChange}
-        />
+          />
         </label>
 
         <br />
@@ -50,7 +53,7 @@ export default function SneakerCreate(props) {
           type='text'
           value={formData.description}
           onChange={handleChange}
-        />
+          />
         
       </label>
 <br />
@@ -60,7 +63,7 @@ export default function SneakerCreate(props) {
           type='integer'
           value={formData.price}
           onChange={handleChange}
-        />
+          />
         
       </label>
       <br />
@@ -69,9 +72,9 @@ export default function SneakerCreate(props) {
         Size: 
         <input
           type='text'
-           value={formData.size}
+          value={formData.size}
           onChange={handleChange}
-        />
+          />
         
       </label>
       <br />
@@ -82,11 +85,12 @@ export default function SneakerCreate(props) {
           type='text'
           value={formData.image}
           onChange={handleChange}
-        />
+          />
         
       </label>
       <br />
       <button>Submit</button>
     </form>
+          </Route>
   );
 }
