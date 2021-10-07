@@ -7,6 +7,7 @@ export default function Sneakers(props) {
       {props.sneakers.map((sneaker) => (
         <div key={sneaker.id}>
           <Link to={`/sneaker/${sneaker.id}`}>
+            <p>{ sneaker.name }</p>
             <p><img src={sneaker.image} alt="retro5" /></p>
           </Link>
           <Link to={`/sneakers/${sneaker.id}/edit`}>
