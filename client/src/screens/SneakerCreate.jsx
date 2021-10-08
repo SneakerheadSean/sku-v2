@@ -15,7 +15,7 @@ export default function SneakerCreate(props) {
     };
 
   return (
-    <Route path="/sneakers" >
+    <Route path="/sneakers/new" exact>
       
     <form onSubmit={(e)=> {
       e.preventDefault()
@@ -91,6 +91,6 @@ export default function SneakerCreate(props) {
       <br />
       <button>Submit</button>
     </form>
-          </Route>
+           </Route>
   );
 }
