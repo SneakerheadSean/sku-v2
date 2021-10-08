@@ -4,14 +4,13 @@ import { Link } from 'react-router-dom';
 export default function Sneakers(props) {
   return (
     <div>
-      {/* <h3>Sneakers</h3> */}
-      <Link to='/sneakers/new'>
+        <Link to='/sneakers/new'>
         <button>Add to Collection!</button>
       </Link>
       {props.sneakers.map((sneaker) => (
         <div key={sneaker.id}>
           <Link to={`/sneakers/${sneaker.id}`}>
-             <p>{ sneaker.name }</p>
+            <p>{ sneaker.name }</p>
             <p><img src={sneaker.image} alt={sneaker.name} /></p>
                 </Link>
           <Link to={`/sneakers/${sneaker.id}/edit`}>
@@ -25,3 +24,4 @@ export default function Sneakers(props) {
     </div>
   );
 }
+

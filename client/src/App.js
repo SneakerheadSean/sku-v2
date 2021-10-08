@@ -1,19 +1,18 @@
-import { useState, useEffect } from 'react';
-import { Switch, Route, useHistory } from 'react-router-dom';
-import './App.css';
+import { useState, useEffect } from "react";
+import { Switch, Route, useHistory } from "react-router-dom";
+import "./App.css";
 
-import Layout from './layouts/Layout';
-import Login from './screens/Login';
-import Register from './screens/Register';
-import MainContainer from './containers/MainContainer';
-
+import Layout from "./layouts/Layout";
+import Login from "./screens/Login";
+import Register from "./screens/Register";
+import MainContainer from "./containers/MainContainer";
 
 import {
   loginUser,
   registerUser,
   verifyUser,
   removeToken,
-} from './services/auth';
+} from "./services/auth";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -30,32 +29,32 @@ function App() {
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push("/");
   };
 
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push("/");
   };
 
   const handleLogout = () => {
     setCurrentUser(null);
-    localStorage.removeItem('authToken');
+    localStorage.removeItem("authToken");
     removeToken();
   };
 
   return (
-    <div className='App'>
-            <Layout currentUser={currentUser} handleLogout={handleLogout}>
+    <div className="App">
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
-          <Route path='/login'>
+          <Route path="/login">
             <Login handleLogin={handleLogin} />
           </Route>
-          <Route path='/register'>
+          <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
-          <Route path='/'>
+          <Route path="/">
             <MainContainer />
           </Route>
         </Switch>
