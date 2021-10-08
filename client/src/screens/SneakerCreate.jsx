@@ -3,7 +3,12 @@ import { Route } from 'react-router-dom';
 
 export default function SneakerCreate(props) {
   const [formData, setFormData] = useState({
-    name: ''
+    name: '',
+    brand: '',
+    description: '',
+    price: '',
+    size: '',
+    image: '',
   })
 
     const handleChange = (e) => {
@@ -47,7 +52,8 @@ export default function SneakerCreate(props) {
         <label>
         Description: 
         <input
-          type='text'
+            type='text'
+            name='description'
           value={formData.description}
           onChange={handleChange}
           />
@@ -57,7 +63,8 @@ export default function SneakerCreate(props) {
       <label>
         Price: 
         <input
-          type='integer'
+            type='integer'
+            name="price"
           value={formData.price}
           onChange={handleChange}
           />
@@ -68,7 +75,8 @@ export default function SneakerCreate(props) {
       <label>
         Size: 
         <input
-          type='text'
+            type='text'
+            name="size"
           value={formData.size}
           onChange={handleChange}
           />
@@ -79,7 +87,8 @@ export default function SneakerCreate(props) {
       <label>
         Image (URL): 
         <input
-          type='text'
+            type='text'
+            name='image'
           value={formData.image}
           onChange={handleChange}
           />

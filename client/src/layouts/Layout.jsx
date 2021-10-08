@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
+
 export default function Layout(props) {
   return (
     <>
-      <header>
+       <header>
         <Link to="/" exact>
           <h1>SKu</h1>
         </Link>
