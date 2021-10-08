@@ -23,6 +23,16 @@ export default function SneakerCreate(props) {
     }}>
       <h3>Add to Collection!</h3>
       <label>
+        Brand: 
+        <input
+          type='text'
+          name='brand'
+          value={formData.brand}
+          onChange={handleChange}
+          />
+        </label>
+        <br />
+      <label>
         Name:
         <input
           type='text'
@@ -32,19 +42,6 @@ export default function SneakerCreate(props) {
           />
         
       </label>
-
-      <br />
-      
-      <label>
-        Brand: 
-        <input
-          type='text'
-          name='brand'
-          value={formData.brand}
-          onChange={handleChange}
-          />
-        </label>
-
         <br />
 
         <label>
