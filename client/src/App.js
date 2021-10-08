@@ -7,6 +7,7 @@ import Login from './screens/Login';
 import Register from './screens/Register';
 import MainContainer from './containers/MainContainer';
 
+
 import {
   loginUser,
   registerUser,
@@ -46,7 +47,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Layout currentUser={currentUser} handleLogout={handleLogout}>
+            <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
           <Route path='/login'>
             <Login handleLogin={handleLogin} />
