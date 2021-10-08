@@ -25,7 +25,7 @@ export const updateSneaker = async (id, sneakerData) => {
   return res.data;
 };
 
-export const addCommentToSneaker = async (sneakerId, id) => {
-  const res = await api.put(`/sneakers/${sneakerId}/comments/${id}`);
+export const addCommentToSneaker = async (sneakerData, id) => {
+  const res = await api.post(`/sneakers/${id}/comments`, { comment: sneakerData });
   return res.data;
 };
