@@ -16,7 +16,7 @@ export const addSneaker = async (sneakerData) => {
 };
 
 export const deleteSneaker = async (id) => {
-  const res = await api.delete(`/sneaker/${id}`);
+  const res = await api.delete(`/sneakers/${id}`);
   return res;
 };
 

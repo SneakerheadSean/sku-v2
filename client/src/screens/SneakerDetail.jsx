@@ -33,7 +33,7 @@ export default function SneakerDetail(props) {
   return (
     <div>
 
-      <h1>Test</h1>
+      <h1>Test 123</h1>
       <h3>{sneakerItem?.name}</h3>
       {sneakerItem?.comments.map((comment) => (
         <p key={comment.id}>{comment.description}</p>

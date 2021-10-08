@@ -41,6 +41,7 @@ export default function MainContainer() {
   const handleSneakerDelete = async (id) => {
     await deleteSneaker(id);
     setSneakers((prevState) => prevState.filter((sneakerItem) => sneakerItem.id !== id));
+    history.push('/sneakers');
   };
 
   const handleSneakerUpdate = async (id, sneakerData) => {
@@ -59,17 +60,17 @@ export default function MainContainer() {
        <Route path='/comments'>
         <Comments comments={comments} />
       </Route>
+      <Route path='/sneakers/new' exact>
+        <SneakerCreate handleSneakerCreate={handleSneakerCreate} />
+      </Route> 
       <Route path='/sneakers/:id/edit'>
         <SneakerEdit sneakers={sneakers} handleSneakerUpdate={handleSneakerUpdate} />
       </Route>
       <Route path='/sneakers/:id'>
         <SneakerDetail
-          // sneakers={sneakers} comments={comments}
+          sneakers={sneakers} comments={comments}
         />
       </Route>
-      <Route path='/sneakers/new'>
-        <SneakerCreate handleSneakerCreate={handleSneakerCreate} />
-      </Route> 
        <Route path='/sneakers'>
         <Sneakers sneakers={sneakers} handleSneakerDelete={handleSneakerDelete} />
       </Route>

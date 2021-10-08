@@ -37,11 +37,7 @@ User.destroy_all
   image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
 )
 
-@comment = Comment.create!(
-  user: @user1,
-  sneaker: @sneaker,
-  description: "testing 123"
-)
+
 
 
 
