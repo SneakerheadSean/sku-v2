@@ -16,7 +16,7 @@ User.destroy_all
     first_name: "Sean",
     last_name: "Hughes",
     email: "sean@nike.com",
-    username: "hughes1",
+    username: "TheHypeBeastDeveloper",
     password: "123456"
 )
 @user1 = User.create!(
@@ -24,6 +24,14 @@ User.destroy_all
   last_name: "Hughes",
   email: "Kyrie@nike.com",
   username: "kyrie1",
+  password: "123456"
+)
+
+@user2 = User.create!(
+  first_name: "Ivy",
+  last_name: "Hughes",
+  email: "Ivy@nike.com",
+  username: "ivy",
   password: "123456"
 )
 
@@ -36,6 +44,80 @@ User.destroy_all
   size: "10.5",
   image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
 )
+
+@sneaker = Sneaker.create!(
+  user: @user,
+  brand: "Jordan",
+  name: "Air Jordan 5 'Raging Bulls'2021",
+  description: "red shoe",
+  price: "$190.00",
+  size: "10.5",
+  image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
+)
+
+@sneaker = Sneaker.create!(
+  user: @user,
+  brand: "Jordan",
+  name: "Air Jordan 5 'Raging Bulls'2021",
+  description: "red shoe",
+  price: "$190.00",
+  size: "10.5",
+  image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
+)
+
+@sneaker = Sneaker.create!(
+  user: @user,
+  brand: "Jordan",
+  name: "Air Jordan 5 'Raging Bulls'2021",
+  description: "red shoe",
+  price: "$190.00",
+  size: "10.5",
+  image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
+)
+
+@sneaker = Sneaker.create!(
+  user: @user,
+  brand: "Jordan",
+  name: "Air Jordan 5 'Raging Bulls'2021",
+  description: "red shoe",
+  price: "$190.00",
+  size: "10.5",
+  image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
+)
+
+@sneaker = Sneaker.create!(
+  user: @user,
+  brand: "Jordan",
+  name: "Air Jordan 5 'Raging Bulls'2021",
+  description: "red shoe",
+  price: "$190.00",
+  size: "10.5",
+  image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
+)
+
+@sneaker = Sneaker.create!(
+  user: @user,
+  brand: "Jordan",
+  name: "Air Jordan 5 'Raging Bulls'2021",
+  description: "red shoe",
+  price: "$190.00",
+  size: "10.5",
+  image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
+)
+
+@sneaker = Sneaker.create!(
+  user: @user,
+  brand: "Jordan",
+  name: "Air Jordan 5 'Raging Bulls'2021",
+  description: "red shoe",
+  price: "$190.00",
+  size: "10.5",
+  image: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/052/891/412/original/724738_01.jpg.jpeg?1617807822"
+)
+
+
+
+
 
 
 

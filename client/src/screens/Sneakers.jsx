@@ -1,27 +1,46 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import './Sneakers.css';
 
 
 export default function Sneakers(props) {
   return (
-    <div>
-        <Link to='/sneakers/new'>
+    <>
+      <Link to="/sneakers/new">
         <button>Add to Collection!</button>
       </Link>
+    <div className="container">
       {props.sneakers.map((sneaker) => (
         <div key={sneaker.id}>
           <Link to={`/sneakers/${sneaker.id}`}>
-            <p>{ sneaker.name }</p>
-            <p><img src={sneaker.image} alt={sneaker.name} /></p>
-                </Link>
-          <Link to={`/sneakers/${sneaker.id}/edit`}>
-            <button>Edit</button>
+            <div class="ui card">
+              <div class="content">{sneaker.name}</div>
+              <div class="image">
+                <img src={sneaker.image} alt={ sneaker.name }/>
+              </div>
+              <div class="content">
+                <span class="right floated">
+                  <i class="heart outline like icon"></i>
+                  17 likes
+                </span>
+                <i class="comment icon"></i>3 comments
+              </div>
+              <div class="extra content">
+                <div class="ui large transparent left icon input">
+                  <Link to={`/sneakers/${sneaker.id}/edit`}>
+                    <button>Edit</button>
+                    <button
+                      onClick={() => props.handleSneakerDelete(sneaker.id)}
+                      >
+                      Delete
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </Link>
-          <button onClick={() => props.handleSneakerDelete(sneaker.id)}>
-            Delete
-          </button>
         </div>
       ))}
     </div>
+      </>
   );
 }
-

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getOneSneaker, addCommentToSneaker } from "../services/sneakers";
 import { deleteComment } from "../services/comments";
-import "./SneakerDetail.css"
+
 
 export default function SneakerDetail(props) {
   const [sneakerItem, setSneakerItem] = useState(null);
@@ -46,7 +46,7 @@ export default function SneakerDetail(props) {
   return (
     <div>
       <div className="sneaker-detail">
-        <div>
+        <div className="sneaker-image">
           <p>
             <img src={sneakerItem?.image} alt={sneakerItem?.name} /></p>
         </div>
@@ -58,6 +58,7 @@ export default function SneakerDetail(props) {
         <p>Description: { sneakerItem?.description }</p>
       </div>
       <div className="comments">
+        <h1>Comments</h1>
         {sneakerItem?.comments.map((comment) => (
           <>
             <p key={comment.id}>{comment.description}</p>
