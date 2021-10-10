@@ -1,15 +1,9 @@
-.home-image {
-  border: 10px solid red;
-  
-}
-
 #image-home {
   height: 60vh;
-  width: 70vw;;
+  width: 70vw;
 }
 
 .home-description {
-  border: 10px solid yellow;
   padding-bottom: 5vh;
   display: flex;
   justify-content: center;
@@ -20,23 +14,43 @@
   width: 75%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1100px) and (min-width: 500px) {
   .home-image {
-    border: 5px solid red;    
+    background-color: red;
   }
-  
+
   #image-home {
-    height: 60vh;
+    height: 20vh;
     width: 70vw;
   }
-  
+
   .home-description {
-    border: 10px solid yellow;
     padding-bottom: 5vh;
     display: flex;
     justify-content: center;
   }
-  
+
+  #sku-description {
+    font-size: 1.5rem;
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 1100px) {
+  .home-image {
+    background-color: blue;
+  }
+
+  #image-home {
+    height: 80vh;
+    width: 70vw;
+  }
+
+  .home-description {
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+  }
+
   #sku-description {
     font-size: 1.5rem;
     width: 75%;
