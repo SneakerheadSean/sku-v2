@@ -57,6 +57,7 @@ export default function SneakerDetail(props) {
         <p>Size: { sneakerItem?.size}</p>
         <p>Description: { sneakerItem?.description }</p>
       </div>
+      <hr />
       <div className="comments">
         <h1>Comments</h1>
         {sneakerItem?.comments.map((comment) => (
