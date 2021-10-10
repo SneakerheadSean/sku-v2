@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
+    username: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -16,64 +16,72 @@ export default function Register(props) {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        props.handleRegister(formData);
-      }}
-    >
-      <h3>Register</h3>
-      <label>
-       First Name: 
-        <input
-          type='text'
-          name='firstname'
-          value={formData.first_name}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-       Last Name: 
-        <input
-          type='text'
-          name='lastname'
-          value={formData.last_name}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Email:
-        <input
-          type='text'
-          name='email'
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-       UserName: 
-        <input
-          type='text'
-          name='username'
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input
-          type='password'
-          name='password'
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <button>Submit</button>
-    </form>
+    <>
+      <form
+        class="ui form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          props.handleRegister(formData);
+        }}
+      >
+        <div class="field">
+          <h3>Register</h3>
+          <label>
+            First Name:
+            <input
+              type="text"
+              name="firstname"
+              value={formData.first_name}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div class="field">
+          <label>
+            Last Name:
+            <input
+              type="text"
+              name="lastname"
+              value={formData.last_name}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div class="field">
+          <label>
+            Email:
+            <input
+              type="text"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div class="field">
+          <label>
+            UserName:
+            <input
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            Password:
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <button class="ui button" type="submit">
+          Submit
+        </button>
+      </form>
+      </>
   );
 }
