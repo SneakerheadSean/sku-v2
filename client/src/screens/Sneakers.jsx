@@ -5,8 +5,13 @@ import './Sneakers.css';
 export default function Sneakers(props) {
   return (
     <>
-      <Link to="/sneakers/new">
-        <button>Add to Collection!</button>
+      <Link to="/sneakers/new"><div class="ui animated button" tabindex="0">
+  <div class="visible content">Add to Collection!</div>
+  <div class="hidden content">
+    <i class="right arrow icon"></i>
+  </div>
+</div>
+        
       </Link>
     <div className="container">
       {props.sneakers.map((sneaker) => (

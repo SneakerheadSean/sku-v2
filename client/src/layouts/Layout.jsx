@@ -17,7 +17,7 @@ export default function Layout(props) {
       {props.currentUser && (
         <>
           <div>
-            <Link to="/sneakers">Sneakers</Link>
+            <Link to="/sneakers">My Collection</Link>
           </div>
 
          
@@ -33,29 +33,18 @@ export default function Layout(props) {
             <button onClick={props.handleLogout}>Logout</button>
           </div>
         ) : (
-          <div class="ui primary button">Sign Up
-          <Link to="/login">Login/Register</Link>
+          <div class="ui primary button">
+          <Link to="/login" class="ui primary button">Login/Register</Link>
           
           </div>
         )}
     </div>
   </div>
-</div>
-
-     
-
-      <div class="navbar">
       </div>
+      <div className="body">
+ {props.children}
 
-      {props.children}
-
-      <div className="container">
-        <div className="SKu-details">
-        </div>
-          <div className="SKu-title">
-
-          </div>
       </div>
-    </>
+ </>
   );
 }
