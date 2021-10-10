@@ -1,0 +1,44 @@
+.home-image {
+  border: 10px solid red;
+  
+}
+
+#image-home {
+  height: 60vh;
+  width: 70vw;;
+}
+
+.home-description {
+  border: 10px solid yellow;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+#sku-description {
+  font-size: 1.5rem;
+  width: 75%;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-image {
+    border: 5px solid red;    
+  }
+  
+  #image-home {
+    height: 60vh;
+    width: 70vw;
+  }
+  
+  .home-description {
+    border: 10px solid yellow;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #sku-description {
+    font-size: 1.5rem;
+    width: 75%;
+  }
+}
