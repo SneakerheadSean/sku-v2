@@ -1,7 +1,4 @@
-.home-image {
-  border: 10px solid red;
-  
-}
+
 
 #image-home {
   height: 60vh;
@@ -9,7 +6,7 @@
 }
 
 .home-description {
-  border: 10px solid yellow;
+  
   padding-bottom: 5vh;
   display: flex;
   justify-content: center;
@@ -22,7 +19,7 @@
 
 @media only screen and (max-width: 500px) {
   .home-image {
-    border: 5px solid red;    
+    background-color: lightgrey;
   }
   
   #image-home {
@@ -31,7 +28,7 @@
   }
   
   .home-description {
-    border: 10px solid yellow;
+   
     padding-bottom: 5vh;
     display: flex;
     justify-content: center;
