@@ -4,6 +4,11 @@ import {useParams} from 'react-router-dom';
 export default function SneakerEdit(props) {
   const [formData, setFormData] = useState({
     name: '',
+    brand: '',
+    price: '',
+    description: '',
+    size: '',
+    image: '',
   });
   const { id } = useParams();
 
@@ -64,6 +69,7 @@ export default function SneakerEdit(props) {
         Description: 
         <input
           type='text'
+          name='description'
           value={formData.description}
           onChange={handleChange}
         />
@@ -74,6 +80,7 @@ export default function SneakerEdit(props) {
         Price: 
         <input
           type='integer'
+          name='price'
           value={formData.price}
           onChange={handleChange}
         />
@@ -85,6 +92,7 @@ export default function SneakerEdit(props) {
         Size: 
         <input
           type='text'
+          name='size'
            value={formData.size}
           onChange={handleChange}
         />

@@ -8,6 +8,7 @@ import Sneakers from '../screens/Sneakers';
 import SneakerCreate from '../screens/SneakerCreate';
 import SneakerEdit from '../screens/SneakerEdit';
 import SneakerDetail from '../screens/SneakerDetail';
+import Home from '../screens/Home/Home';
 
 
 
@@ -73,6 +74,9 @@ export default function MainContainer() {
       </Route>
        <Route path='/sneakers'>
         <Sneakers sneakers={sneakers} handleSneakerDelete={handleSneakerDelete} />
+      </Route>
+      <Route path="/">
+        <Home />
       </Route>
     </Switch>
   ); 
